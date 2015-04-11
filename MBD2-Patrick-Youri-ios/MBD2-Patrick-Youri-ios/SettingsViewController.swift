@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var maxDistance: Int? = userDefaults.objectForKey("maxDistance") as Int?
+        var maxDistance: Double? = userDefaults.objectForKey("maxDistance") as Double?
         if (maxDistance == nil)
         {
             maxDistance = 10
@@ -33,10 +33,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var Distance: UILabel!
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        var distanceValue = Int(sender.value)
+        var distanceValue = round(Double(sender.value) / 0.1) * 0.1
         Distance.text = "\(distanceValue) Km"
         userDefaults.setObject(distanceValue, forKey: "maxDistance")
     }
-    
-    
 }

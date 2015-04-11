@@ -69,14 +69,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzw-tn-eQm">
-                                <rect key="frame" x="534" y="101" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="gQS-JL-3po">
-                                <rect key="frame" x="22" y="101" width="506" height="31"/>
+                                <rect key="frame" x="22" y="101" width="491" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="mx4-pi-BEr"/>
                                 </constraints>
@@ -89,6 +83,12 @@
                                     <action selector="sliderValueChanged:" destination="8IA-sA-o2i" eventType="valueChanged" id="OSH-xJ-LdV"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0 Km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzw-tn-eQm">
+                                <rect key="frame" x="519" y="101" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4a-ZS-RuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3618" y="-54"/>
+            <point key="canvasLocation" x="3561" y="-77"/>
         </scene>
         <!--Restaurants-->
         <scene sceneID="Pko-nk-0hZ">
