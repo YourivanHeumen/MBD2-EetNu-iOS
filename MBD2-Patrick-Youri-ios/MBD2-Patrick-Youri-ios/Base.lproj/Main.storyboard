@@ -15,7 +15,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Restaurants" id="zU7-b4-rjf"/>
                     <connections>
-                        <segue destination="13f-oK-fvX" kind="showDetail" id="pgV-SP-8XW"/>
+                        <segue destination="13f-oK-fvX" kind="showDetail" identifier="DetailsViewController" id="pgV-SP-8XW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
