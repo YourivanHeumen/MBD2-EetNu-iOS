@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CEDC60291AD9790600066FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC60281AD9790600066FDD /* AppDelegate.swift */; };
-		CEDC602B1AD9790600066FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC602A1AD9790600066FDD /* ViewController.swift */; };
+		CEDC602B1AD9790600066FDD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC602A1AD9790600066FDD /* ListViewController.swift */; };
 		CEDC602E1AD9790600066FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC602C1AD9790600066FDD /* Main.storyboard */; };
 		CEDC60301AD9790600066FDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC602F1AD9790600066FDD /* Images.xcassets */; };
 		CEDC60331AD9790600066FDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC60311AD9790600066FDD /* LaunchScreen.xib */; };
 		CEDC603F1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC603E1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift */; };
+		CEDC60491AD97A4B00066FDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC60481AD97A4B00066FDD /* SettingsViewController.swift */; };
+		CEDC604B1AD97A8500066FDD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC604A1AD97A8500066FDD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		CEDC60231AD9790600066FDD /* MBD2-Patrick-Youri-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBD2-Patrick-Youri-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC60271AD9790600066FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDC60281AD9790600066FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEDC602A1AD9790600066FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEDC602A1AD9790600066FDD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		CEDC602D1AD9790600066FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDC602F1AD9790600066FDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEDC60321AD9790600066FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CEDC60381AD9790600066FDD /* MBD2-Patrick-Youri-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MBD2-Patrick-Youri-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC603D1AD9790600066FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDC603E1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBD2_Patrick_Youri_iosTests.swift; sourceTree = "<group>"; };
+		CEDC60481AD97A4B00066FDD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CEDC604A1AD97A8500066FDD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,9 @@
 		CEDC60251AD9790600066FDD /* MBD2-Patrick-Youri-ios */ = {
 			isa = PBXGroup;
 			children = (
-				CEDC602A1AD9790600066FDD /* ViewController.swift */,
+				CEDC604A1AD97A8500066FDD /* DetailViewController.swift */,
+				CEDC60481AD97A4B00066FDD /* SettingsViewController.swift */,
+				CEDC602A1AD9790600066FDD /* ListViewController.swift */,
 				CEDC602C1AD9790600066FDD /* Main.storyboard */,
 				CEDC602F1AD9790600066FDD /* Images.xcassets */,
 				CEDC60261AD9790600066FDD /* Supporting Files */,
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDC602B1AD9790600066FDD /* ViewController.swift in Sources */,
+				CEDC602B1AD9790600066FDD /* ListViewController.swift in Sources */,
 				CEDC60291AD9790600066FDD /* AppDelegate.swift in Sources */,
+				CEDC60491AD97A4B00066FDD /* SettingsViewController.swift in Sources */,
+				CEDC604B1AD97A8500066FDD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				CEDC60441AD9790600066FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEDC60451AD9790600066FDD /* Build configuration list for PBXNativeTarget "MBD2-Patrick-Youri-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +424,7 @@
 				CEDC60471AD9790600066FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

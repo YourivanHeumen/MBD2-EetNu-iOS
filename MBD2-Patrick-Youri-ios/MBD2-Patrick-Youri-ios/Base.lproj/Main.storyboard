@@ -7,17 +7,38 @@
         <!--Restaurants-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MBD2_Patrick_Youri_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="MBD2_Patrick_Youri_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="scK-m8-JBX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Restaurants" id="zU7-b4-rjf"/>
+                    <connections>
+                        <segue destination="0Yq-rJ-YbQ" kind="showDetail" id="pgV-SP-8XW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2050" y="629"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="tua-pf-TvT">
+            <objects>
+                <viewController id="0Yq-rJ-YbQ" customClass="DetailViewController" customModule="MBD2_Patrick_Youri_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wg9-fs-boS"/>
+                        <viewControllerLayoutGuide type="bottom" id="MdG-5g-pdb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hrx-0z-lcB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhh-0R-6Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2806" y="629"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HS5-At-fPw">
@@ -41,7 +62,7 @@
         <!--Settings-->
         <scene sceneID="FQS-7y-gVt">
             <objects>
-                <viewController id="8IA-sA-o2i" sceneMemberID="viewController">
+                <viewController id="8IA-sA-o2i" customClass="SettingsViewController" customModule="MBD2_Patrick_Youri_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vto-KN-zcw"/>
                         <viewControllerLayoutGuide type="bottom" id="yrg-Ng-Cvk"/>
