@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEDC60291AD9790600066FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC60281AD9790600066FDD /* AppDelegate.swift */; };
+		CEDC602B1AD9790600066FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC602A1AD9790600066FDD /* ViewController.swift */; };
+		CEDC602E1AD9790600066FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC602C1AD9790600066FDD /* Main.storyboard */; };
+		CEDC60301AD9790600066FDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC602F1AD9790600066FDD /* Images.xcassets */; };
+		CEDC60331AD9790600066FDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC60311AD9790600066FDD /* LaunchScreen.xib */; };
+		CEDC603F1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC603E1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEDC60391AD9790600066FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDC601B1AD9790600066FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDC60221AD9790600066FDD;
+			remoteInfo = "MBD2-Patrick-Youri-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEDC60231AD9790600066FDD /* MBD2-Patrick-Youri-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBD2-Patrick-Youri-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC60271AD9790600066FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDC60281AD9790600066FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEDC602A1AD9790600066FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEDC602D1AD9790600066FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDC602F1AD9790600066FDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEDC60321AD9790600066FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CEDC60381AD9790600066FDD /* MBD2-Patrick-Youri-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MBD2-Patrick-Youri-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDC603D1AD9790600066FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDC603E1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBD2_Patrick_Youri_iosTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDC60201AD9790600066FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC60351AD9790600066FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEDC601A1AD9790600066FDD = {
+			isa = PBXGroup;
+			children = (
+				CEDC60251AD9790600066FDD /* MBD2-Patrick-Youri-ios */,
+				CEDC603B1AD9790600066FDD /* MBD2-Patrick-Youri-iosTests */,
+				CEDC60241AD9790600066FDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDC60241AD9790600066FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC60231AD9790600066FDD /* MBD2-Patrick-Youri-ios.app */,
+				CEDC60381AD9790600066FDD /* MBD2-Patrick-Youri-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDC60251AD9790600066FDD /* MBD2-Patrick-Youri-ios */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC602A1AD9790600066FDD /* ViewController.swift */,
+				CEDC602C1AD9790600066FDD /* Main.storyboard */,
+				CEDC602F1AD9790600066FDD /* Images.xcassets */,
+				CEDC60261AD9790600066FDD /* Supporting Files */,
+			);
+			path = "MBD2-Patrick-Youri-ios";
+			sourceTree = "<group>";
+		};
+		CEDC60261AD9790600066FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC60311AD9790600066FDD /* LaunchScreen.xib */,
+				CEDC60281AD9790600066FDD /* AppDelegate.swift */,
+				CEDC60271AD9790600066FDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEDC603B1AD9790600066FDD /* MBD2-Patrick-Youri-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC603E1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift */,
+				CEDC603C1AD9790600066FDD /* Supporting Files */,
+			);
+			path = "MBD2-Patrick-Youri-iosTests";
+			sourceTree = "<group>";
+		};
+		CEDC603C1AD9790600066FDD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC603D1AD9790600066FDD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDC60221AD9790600066FDD /* MBD2-Patrick-Youri-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC60421AD9790600066FDD /* Build configuration list for PBXNativeTarget "MBD2-Patrick-Youri-ios" */;
+			buildPhases = (
+				CEDC601F1AD9790600066FDD /* Sources */,
+				CEDC60201AD9790600066FDD /* Frameworks */,
+				CEDC60211AD9790600066FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MBD2-Patrick-Youri-ios";
+			productName = "MBD2-Patrick-Youri-ios";
+			productReference = CEDC60231AD9790600066FDD /* MBD2-Patrick-Youri-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEDC60371AD9790600066FDD /* MBD2-Patrick-Youri-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDC60451AD9790600066FDD /* Build configuration list for PBXNativeTarget "MBD2-Patrick-Youri-iosTests" */;
+			buildPhases = (
+				CEDC60341AD9790600066FDD /* Sources */,
+				CEDC60351AD9790600066FDD /* Frameworks */,
+				CEDC60361AD9790600066FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEDC603A1AD9790600066FDD /* PBXTargetDependency */,
+			);
+			name = "MBD2-Patrick-Youri-iosTests";
+			productName = "MBD2-Patrick-Youri-iosTests";
+			productReference = CEDC60381AD9790600066FDD /* MBD2-Patrick-Youri-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDC601B1AD9790600066FDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Patrick-Youri";
+				TargetAttributes = {
+					CEDC60221AD9790600066FDD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CEDC60371AD9790600066FDD = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CEDC60221AD9790600066FDD;
+					};
+				};
+			};
+			buildConfigurationList = CEDC601E1AD9790600066FDD /* Build configuration list for PBXProject "MBD2-Patrick-Youri-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDC601A1AD9790600066FDD;
+			productRefGroup = CEDC60241AD9790600066FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDC60221AD9790600066FDD /* MBD2-Patrick-Youri-ios */,
+				CEDC60371AD9790600066FDD /* MBD2-Patrick-Youri-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDC60211AD9790600066FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC602E1AD9790600066FDD /* Main.storyboard in Resources */,
+				CEDC60331AD9790600066FDD /* LaunchScreen.xib in Resources */,
+				CEDC60301AD9790600066FDD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC60361AD9790600066FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDC601F1AD9790600066FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC602B1AD9790600066FDD /* ViewController.swift in Sources */,
+				CEDC60291AD9790600066FDD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDC60341AD9790600066FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC603F1AD9790600066FDD /* MBD2_Patrick_Youri_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEDC603A1AD9790600066FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEDC60221AD9790600066FDD /* MBD2-Patrick-Youri-ios */;
+			targetProxy = CEDC60391AD9790600066FDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEDC602C1AD9790600066FDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDC602D1AD9790600066FDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEDC60311AD9790600066FDD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDC60321AD9790600066FDD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDC60401AD9790600066FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEDC60411AD9790600066FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEDC60431AD9790600066FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MBD2-Patrick-Youri-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEDC60441AD9790600066FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MBD2-Patrick-Youri-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEDC60461AD9790600066FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MBD2-Patrick-Youri-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBD2-Patrick-Youri-ios.app/MBD2-Patrick-Youri-ios";
+			};
+			name = Debug;
+		};
+		CEDC60471AD9790600066FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MBD2-Patrick-Youri-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBD2-Patrick-Youri-ios.app/MBD2-Patrick-Youri-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDC601E1AD9790600066FDD /* Build configuration list for PBXProject "MBD2-Patrick-Youri-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC60401AD9790600066FDD /* Debug */,
+				CEDC60411AD9790600066FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDC60421AD9790600066FDD /* Build configuration list for PBXNativeTarget "MBD2-Patrick-Youri-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC60431AD9790600066FDD /* Debug */,
+				CEDC60441AD9790600066FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEDC60451AD9790600066FDD /* Build configuration list for PBXNativeTarget "MBD2-Patrick-Youri-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC60461AD9790600066FDD /* Debug */,
+				CEDC60471AD9790600066FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEDC601B1AD9790600066FDD /* Project object */;
+}
