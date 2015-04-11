@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tUp-G5-h1Z">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Restaurants-->
@@ -58,9 +59,66 @@
                     <view key="view" contentMode="scaleToFill" id="xye-3X-2bb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum distance from the restaurant in km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="ti5-VF-T6k">
+                                <rect key="frame" x="24" y="72" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xBv-2r-3fn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="gQS-JL-3po">
+                                <rect key="frame" x="22" y="101" width="536" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="mx4-pi-BEr"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mx4-pi-BEr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="8IA-sA-o2i" eventType="valueChanged" id="OSH-xJ-LdV"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzw-tn-eQm">
+                                <rect key="frame" x="564" y="101" width="20" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gQS-JL-3po" firstAttribute="leading" secondItem="ti5-VF-T6k" secondAttribute="leading" id="6Gb-t6-24f"/>
+                            <constraint firstItem="gQS-JL-3po" firstAttribute="leading" secondItem="xye-3X-2bb" secondAttribute="leadingMargin" id="FU0-1E-B88"/>
+                            <constraint firstItem="Gzw-tn-eQm" firstAttribute="leading" secondItem="gQS-JL-3po" secondAttribute="trailing" constant="8" symbolic="YES" id="HsF-yQ-Ixe"/>
+                            <constraint firstItem="ti5-VF-T6k" firstAttribute="leading" secondItem="gQS-JL-3po" secondAttribute="leading" id="OTe-kO-pH5"/>
+                            <constraint firstItem="Gzw-tn-eQm" firstAttribute="top" secondItem="ti5-VF-T6k" secondAttribute="bottom" constant="8" symbolic="YES" id="RCH-Kb-zeG"/>
+                            <constraint firstItem="gQS-JL-3po" firstAttribute="leading" secondItem="xye-3X-2bb" secondAttribute="leadingMargin" constant="8" id="Trc-fu-wUe"/>
+                            <constraint firstItem="ti5-VF-T6k" firstAttribute="top" secondItem="vto-KN-zcw" secondAttribute="bottom" constant="8" symbolic="YES" id="cZ7-yo-vVM"/>
+                            <constraint firstItem="gQS-JL-3po" firstAttribute="top" secondItem="ti5-VF-T6k" secondAttribute="bottom" constant="8" symbolic="YES" id="dNO-2w-Rg6"/>
+                            <constraint firstItem="ti5-VF-T6k" firstAttribute="trailing" secondItem="Gzw-tn-eQm" secondAttribute="trailing" id="j6m-uK-YvO"/>
+                            <constraint firstItem="ti5-VF-T6k" firstAttribute="trailing" secondItem="xye-3X-2bb" secondAttribute="trailingMargin" id="qAo-b8-rOl"/>
+                            <constraint firstItem="ti5-VF-T6k" firstAttribute="leading" secondItem="xye-3X-2bb" secondAttribute="leadingMargin" id="wdM-K9-hRL"/>
+                            <constraint firstItem="gQS-JL-3po" firstAttribute="leading" secondItem="xye-3X-2bb" secondAttribute="leadingMargin" constant="8" id="yJm-1p-epm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OTe-kO-pH5"/>
+                                <exclude reference="wdM-K9-hRL"/>
+                                <exclude reference="FU0-1E-B88"/>
+                                <exclude reference="Trc-fu-wUe"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="W1M-d0-UUL"/>
+                    <connections>
+                        <outlet property="Distance" destination="Gzw-tn-eQm" id="BUe-GG-93l"/>
+                        <outlet property="Slider" destination="gQS-JL-3po" id="H0q-EC-weO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4a-ZS-RuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

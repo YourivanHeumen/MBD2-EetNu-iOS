@@ -20,4 +20,10 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var Slider: UISlider!
+    @IBOutlet weak var Distance: UILabel!
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        var distanceValue = Int(sender.value)
+        Distance.text = "\(distanceValue) Km"
+    }
 }
