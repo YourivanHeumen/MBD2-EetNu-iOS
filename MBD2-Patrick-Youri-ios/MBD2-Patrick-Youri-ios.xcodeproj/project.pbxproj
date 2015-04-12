@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEBBFC341ADAEE11001B1EC6 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBFC301ADAEE11001B1EC6 /* Address.swift */; };
+		CEBBFC351ADAEE11001B1EC6 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBFC311ADAEE11001B1EC6 /* ListTableViewController.swift */; };
+		CEBBFC361ADAEE11001B1EC6 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBFC321ADAEE11001B1EC6 /* Venue.swift */; };
+		CEBBFC371ADAEE11001B1EC6 /* VenueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBFC331ADAEE11001B1EC6 /* VenueRequest.swift */; };
 		CEDC60291AD9790600066FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC60281AD9790600066FDD /* AppDelegate.swift */; };
-		CEDC602B1AD9790600066FDD /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC602A1AD9790600066FDD /* ListViewController.swift */; };
 		CEDC602E1AD9790600066FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC602C1AD9790600066FDD /* Main.storyboard */; };
 		CEDC60301AD9790600066FDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC602F1AD9790600066FDD /* Images.xcassets */; };
 		CEDC60331AD9790600066FDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEDC60311AD9790600066FDD /* LaunchScreen.xib */; };
@@ -28,10 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEBBFC301ADAEE11001B1EC6 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		CEBBFC311ADAEE11001B1EC6 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		CEBBFC321ADAEE11001B1EC6 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		CEBBFC331ADAEE11001B1EC6 /* VenueRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueRequest.swift; sourceTree = "<group>"; };
 		CEDC60231AD9790600066FDD /* MBD2-Patrick-Youri-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MBD2-Patrick-Youri-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDC60271AD9790600066FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEDC60281AD9790600066FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEDC602A1AD9790600066FDD /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		CEDC602D1AD9790600066FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDC602F1AD9790600066FDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CEDC60321AD9790600066FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,9 +87,12 @@
 		CEDC60251AD9790600066FDD /* MBD2-Patrick-Youri-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CEBBFC301ADAEE11001B1EC6 /* Address.swift */,
+				CEBBFC311ADAEE11001B1EC6 /* ListTableViewController.swift */,
+				CEBBFC321ADAEE11001B1EC6 /* Venue.swift */,
+				CEBBFC331ADAEE11001B1EC6 /* VenueRequest.swift */,
 				CEDC604A1AD97A8500066FDD /* DetailViewController.swift */,
 				CEDC60481AD97A4B00066FDD /* SettingsViewController.swift */,
-				CEDC602A1AD9790600066FDD /* ListViewController.swift */,
 				CEDC602C1AD9790600066FDD /* Main.storyboard */,
 				CEDC602F1AD9790600066FDD /* Images.xcassets */,
 				CEDC60261AD9790600066FDD /* Supporting Files */,
@@ -218,9 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEDC602B1AD9790600066FDD /* ListViewController.swift in Sources */,
 				CEDC60291AD9790600066FDD /* AppDelegate.swift in Sources */,
+				CEBBFC361ADAEE11001B1EC6 /* Venue.swift in Sources */,
 				CEDC60491AD97A4B00066FDD /* SettingsViewController.swift in Sources */,
+				CEBBFC371ADAEE11001B1EC6 /* VenueRequest.swift in Sources */,
+				CEBBFC341ADAEE11001B1EC6 /* Address.swift in Sources */,
+				CEBBFC351ADAEE11001B1EC6 /* ListTableViewController.swift in Sources */,
 				CEDC604B1AD97A8500066FDD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var maxDistance: Double? = userDefaults.objectForKey("maxDistance") as Double?
+        var maxDistance: Double? = userDefaults.objectForKey("maxDistance") as? Double
         if (maxDistance == nil)
         {
             maxDistance = 10
