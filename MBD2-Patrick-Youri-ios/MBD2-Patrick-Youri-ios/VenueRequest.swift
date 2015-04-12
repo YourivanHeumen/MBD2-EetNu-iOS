@@ -7,15 +7,22 @@
 //
 
 import Foundation
+import CoreLocation
 
 public class VenueRequest
 {
-    private let url = "https://api.eet.nu/venues?max_distance=1&geolocation=51.6883248,5.2869616"
     
-    
-    func doRequest() -> NSDictionary
-    {
-        let json = getJSON(self.url)
+    func doRequest(coords: CLLocationCoordinate2D) -> NSDictionary
+    {        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var maxDistance: Float? = userDefaults.objectForKey("maxDistance") as? Float
+        
+        if (maxDistance == nil)
+        {
+            maxDistance = 10
+        }
+        
+        let json = getJSON("https://api.eet.nu/venues?max_distance=\(maxDistance!)&geolocation=\(coords.latitude),\(coords.longitude)")
         return parseJSON(json)
     }
     
@@ -25,7 +32,7 @@ public class VenueRequest
     }
     
     func getJSON(urlToRequest: String) -> NSData{
-        return NSData(contentsOfURL: NSURL(string: self.url)!) ?? NSData(contentsOfURL: NSURL(string: "")!)!
+        return NSData(contentsOfURL: NSURL(string: urlToRequest)!) ?? NSData(contentsOfURL: NSURL(string: "")!)!
     }
     
     func parseJSON(inputData: NSData) -> NSDictionary{

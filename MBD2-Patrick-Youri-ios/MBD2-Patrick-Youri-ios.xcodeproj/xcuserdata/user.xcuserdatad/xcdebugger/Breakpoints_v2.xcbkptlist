@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBD2-Patrick-Youri-ios/VenueRequest.swift"
+            timestampString = "450563540.848822"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBD2_Patrick_Youri_ios.VenueRequest.deinit"
+                  moduleName = "MBD2-Patrick-Youri-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/MBD2-EetNu-iOS/MBD2-Patrick-Youri-ios/MBD2-Patrick-Youri-ios/VenueRequest.swift"
+                  timestampString = "450563374.957759"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBD2_Patrick_Youri_ios.VenueRequest.init (MBD2_Patrick_Youri_ios.VenueRequest.Type)() -&gt; MBD2_Patrick_Youri_ios.VenueRequest"
+                  moduleName = "MBD2-Patrick-Youri-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/MBD2-EetNu-iOS/MBD2-Patrick-Youri-ios/MBD2-Patrick-Youri-ios/VenueRequest.swift"
+                  timestampString = "450563374.957921"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MBD2-Patrick-Youri-ios/VenueRequest.swift"
+            timestampString = "450567216.434827"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "VenueRequest"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBD2_Patrick_Youri_ios.VenueRequest.__deallocating_deinit"
+                  moduleName = "MBD2-Patrick-Youri-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/MBD2-EetNu-iOS/MBD2-Patrick-Youri-ios/MBD2-Patrick-Youri-ios/VenueRequest.swift"
+                  timestampString = "450563399.013549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBD2_Patrick_Youri_ios.VenueRequest.deinit"
+                  moduleName = "MBD2-Patrick-Youri-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/MBD2-EetNu-iOS/MBD2-Patrick-Youri-ios/MBD2-Patrick-Youri-ios/VenueRequest.swift"
+                  timestampString = "450563399.014064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MBD2_Patrick_Youri_ios.VenueRequest.init (MBD2_Patrick_Youri_ios.VenueRequest.Type)() -&gt; MBD2_Patrick_Youri_ios.VenueRequest"
+                  moduleName = "MBD2-Patrick-Youri-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/MBD2-EetNu-iOS/MBD2-Patrick-Youri-ios/MBD2-Patrick-Youri-ios/VenueRequest.swift"
+                  timestampString = "450563399.014296"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

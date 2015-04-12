@@ -35,6 +35,11 @@
                         <sections/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Restaurants" id="zU7-b4-rjf">
+                        <barButtonItem key="leftBarButtonItem" title="Refresh" id="ivK-pC-DvP">
+                            <connections>
+                                <action selector="refreshButton:" destination="BYZ-38-t0r" id="F2U-pp-csT"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="xCC-aJ-XGJ">
                             <connections>
                                 <segue destination="ULt-o0-UpX" kind="show" id="E7C-5s-jUd"/>
@@ -95,6 +100,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0 Km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzw-tn-eQm">
+                                <rect key="frame" x="519" y="101" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="gQS-JL-3po">
                                 <rect key="frame" x="22" y="101" width="491" height="31"/>
                                 <constraints>
@@ -109,12 +120,6 @@
                                     <action selector="sliderValueChanged:" destination="8IA-sA-o2i" eventType="valueChanged" id="OSH-xJ-LdV"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0 Km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzw-tn-eQm">
-                                <rect key="frame" x="519" y="101" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
