@@ -37,6 +37,15 @@ class ListTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let cell = sender as? UITableViewCell {
+            if let vc = segue.destinationViewController as? DetailViewController {
+                let selectedIndex = self.tableView.indexPathForCell(cell)
+                
+            }
+        }
+    }
 
     // MARK: - Table view data source
 

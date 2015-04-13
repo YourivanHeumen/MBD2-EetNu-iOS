@@ -30,6 +30,9 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES"/>
                                 </accessibility>
+                                <connections>
+                                    <segue destination="13f-oK-fvX" kind="show" id="svH-hP-qml"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -41,9 +44,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="13f-oK-fvX" kind="showDetail" identifier="DetailsViewController" id="pgV-SP-8XW"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +60,14 @@
                     <view key="view" contentMode="scaleToFill" id="hrx-0z-lcB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYs-sv-nbZ">
+                                <rect key="frame" x="16" y="64" width="568" height="35"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="lrc-0i-nxQ">
@@ -204,10 +212,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1g-aE-5dC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806" y="629"/>
+            <point key="canvasLocation" x="2852" y="643"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="E7C-5s-jUd"/>
+        <segue reference="9td-Hj-M6W"/>
     </inferredMetricsTieBreakers>
 </document>

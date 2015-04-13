@@ -9,6 +9,16 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var detailVenue: Venue? = nil {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    func updateUI() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
