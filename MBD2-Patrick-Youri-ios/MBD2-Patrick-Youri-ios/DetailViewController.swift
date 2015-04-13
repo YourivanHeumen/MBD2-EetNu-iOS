@@ -13,15 +13,16 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var venueNameLabel: UILabel!
     
-    var detailVenue: Venue?
+    @IBOutlet weak var venueCategoryLabel: UILabel!
     
-    func updateUI() {
-        if self.detailVenue != nil {
-            println(venueNameLabel)
-            venueNameLabel?.text = self.detailVenue!.name
-        }
-        
-    }
+    @IBOutlet weak var venuePhoneLabel: UILabel!
+    
+    @IBOutlet weak var venueWebsiteLabel: UILabel!
+    
+    @IBOutlet weak var venueDistanceLabel: UILabel!
+    
+    
+    var detailVenue: Venue?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,20 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateUI() {
+        if self.detailVenue != nil {
+            venueNameLabel?.text = self.detailVenue!.name
+            venueCategoryLabel?.text = self.detailVenue?.category
+            venuePhoneLabel?.text = self.detailVenue?.phonenumber
+            venueWebsiteLabel?.text = self.detailVenue?.website_url
+            venueDistanceLabel?.text = String(stringInterpolationSegment: self.detailVenue!.distance)
+        }
+        
+    }
+    @IBAction func callAction(sender: UIButton) {
+        if let phonenumber = self.detailVenue?.phonenumber.stringByReplacingOccurrencesOfString(" ", withString: "").stringByReplacingOccurrencesOfString("+", withString: "")
+        {
+            UIApplication.sharedApplication().openURL(NSURL(string: "tel://\(phonenumber)")!)
+        }
     }
 }
