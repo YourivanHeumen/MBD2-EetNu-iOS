@@ -10,19 +10,22 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var detailVenue: Venue? = nil {
-        didSet {
-            updateUI()
-        }
-    }
+    
+    @IBOutlet weak var venueNameLabel: UILabel!
+    
+    var detailVenue: Venue?
     
     func updateUI() {
+        if self.detailVenue != nil {
+            println(venueNameLabel)
+            venueNameLabel?.text = self.detailVenue!.name
+        }
         
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateUI()
         // Do any additional setup after loading the view.
     }
 

@@ -31,7 +31,7 @@
                                     <accessibilityTraits key="traits" none="YES" button="YES"/>
                                 </accessibility>
                                 <connections>
-                                    <segue destination="13f-oK-fvX" kind="show" id="svH-hP-qml"/>
+                                    <segue destination="0Yq-rJ-YbQ" kind="show" identifier="toDetails" id="dAw-8Z-Su7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,14 +66,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYs-sv-nbZ">
-                                <rect key="frame" x="16" y="64" width="568" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYs-sv-nbZ">
+                                <rect key="frame" x="16" y="72" width="568" height="20"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aYs-sv-nbZ" firstAttribute="top" secondItem="Wg9-fs-boS" secondAttribute="bottom" constant="8" symbolic="YES" id="L0D-ea-MnY"/>
+                            <constraint firstItem="aYs-sv-nbZ" firstAttribute="trailing" secondItem="hrx-0z-lcB" secondAttribute="trailingMargin" id="Pt1-VG-f0l"/>
+                            <constraint firstItem="MdG-5g-pdb" firstAttribute="top" secondItem="aYs-sv-nbZ" secondAttribute="bottom" constant="493" id="ejf-O8-7nH"/>
+                            <constraint firstItem="aYs-sv-nbZ" firstAttribute="leading" secondItem="hrx-0z-lcB" secondAttribute="leadingMargin" id="gBd-Xr-9WJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ejf-O8-7nH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="lrc-0i-nxQ">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="TNR-TR-s7J">
@@ -82,10 +93,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="VenueNameLabel" destination="aYs-sv-nbZ" id="6v0-y6-utA"/>
+                        <outlet property="venueNameLabel" destination="aYs-sv-nbZ" id="YdP-9V-Woy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhh-0R-6Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3618" y="629"/>
+            <point key="canvasLocation" x="3888" y="735"/>
         </scene>
         <!--Settings-->
         <scene sceneID="FQS-7y-gVt">
@@ -202,25 +217,26 @@
             <point key="canvasLocation" x="2806" y="-54"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="qA9-4C-Klf">
+        <scene sceneID="JNo-de-lVz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="13f-oK-fvX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="z34-Jq-g6P" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vw1-P5-wwB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aPW-I3-sxI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0Yq-rJ-YbQ" kind="relationship" relationship="rootViewController" id="oCj-c8-VdR"/>
+                        <segue destination="0Yq-rJ-YbQ" kind="relationship" relationship="rootViewController" id="EzZ-h9-oDX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K1g-aE-5dC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0KA-74-bah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2852" y="643"/>
+            <point key="canvasLocation" x="3088" y="932"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9td-Hj-M6W"/>
+        <segue reference="EzZ-h9-oDX"/>
     </inferredMetricsTieBreakers>
 </document>

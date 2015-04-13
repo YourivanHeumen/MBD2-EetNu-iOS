@@ -64,9 +64,11 @@ class ListTableViewController: UITableViewController, CLLocationManagerDelegate{
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let cell = sender as? UITableViewCell {
-            if let vc = segue.destinationViewController as? DetailViewController {
-                let selectedIndex = self.tableView.indexPathForCell(cell)
-                
+            if segue.identifier == "toDetails" {
+                let vc = segue.destinationViewController as! DetailViewController
+                if let selectedIndex = self.tableView.indexPathForCell(cell)?.row{
+                    vc.detailVenue = venues[selectedIndex]
+                }
             }
         }
     }
