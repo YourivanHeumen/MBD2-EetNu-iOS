@@ -21,6 +21,14 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var venueDistanceLabel: UILabel!
     
+    @IBOutlet weak var venueStreetLabel: UILabel!
+    
+    @IBOutlet weak var venueZipLabel: UILabel!
+    
+    @IBOutlet weak var venueCityLabel: UILabel!
+    
+    @IBOutlet weak var venueCountryLabel: UILabel!
+    
     
     var detailVenue: Venue?
 
@@ -37,7 +45,11 @@ class DetailViewController: UIViewController {
             venuePhoneLabel?.text = self.detailVenue?.phonenumber
             venueWebsiteLabel?.text = self.detailVenue?.website_url
             venueDistanceLabel?.text = String(stringInterpolationSegment: self.detailVenue!.distance)
-        }
+            venueStreetLabel?.text = self.detailVenue?.address.street
+            venueZipLabel?.text = self.detailVenue?.address.zipcode
+            venueCityLabel?.text = self.detailVenue?.address.city
+            venueCountryLabel?.text = self.detailVenue?.address.country
+         }
         
     }
     @IBAction func callAction(sender: UIButton) {
